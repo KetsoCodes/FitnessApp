@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFEE"
+    tools:context=".Chest">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/blevelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginTop="0dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Month 1-3"
+                android:textAlignment="center"
+                android:textColor="#3A3838"
+                android:textSize="30sp"
+                app:fontFamily="@font/audiowide"
+                app:layout_constraintBottom_toTopOf="@+id/bAbsOne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/bAbsOne"/>
+            <LinearLayout
+                android:id="@+id/bAbsOne"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blevelTitle"
+                app:layout_constraintBottom_toTopOf="@id/bAbsTwo"
+                >
+
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/benchpress" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bAbsOneTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Flat bench press"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/bAbsOneDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="8-12 reps\n4 sets\n15 - 20 minues"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bAbsTwo"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bAbsOne"
+                app:layout_constraintBottom_toTopOf="@id/bAbsThree"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:src="@drawable/inclinedumbbellpress"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bAbsTwoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Incline dumbell press"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/bAbsTwoDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="8-12 reps\n3 sets\n15 - 20 minues"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bAbsThree"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bAbsTwo"
+                app:layout_constraintBottom_toTopOf="@id/ilevelTitle"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:src="@drawable/slowclap"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bAbsThreeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Slow clap push-ups"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/bAbsThreeDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="3 sets\nUntil failure"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ilevelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginTop="0dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Month 4-7"
+                android:textAlignment="center"
+                android:textColor="#3A3838"
+                android:textSize="30sp"
+                app:fontFamily="@font/audiowide"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bAbsThree"
+                app:layout_constraintBottom_toTopOf="@id/iAbsOne"
+                />
+            <LinearLayout
+                android:id="@+id/iAbsOne"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ilevelTitle"
+                app:layout_constraintBottom_toTopOf="@id/iAbsOne"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:src="@drawable/dumbellflast"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/iAbsOneTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Flat dumbell press"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/iAbsOneDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="8-12 reps\n4 sets\n15 - 20 minues"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/iAbsTwo"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iAbsOne"
+                app:layout_constraintBottom_toTopOf="@id/iAbsThree"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:src="@drawable/declinepress"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/iAbsTwoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Decline bench press"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/iAbsTwoDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="8-12 reps\n3 sets\n15 - 20 minues"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iAbsThree"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iAbsTwo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:src="@drawable/dips"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/iAbsThreeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Dips"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/iAbsThreeDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="3 sets\nUntil failure"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pLevelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Month 8-12"
+                android:textAlignment="center"
+                android:textColor="#3A3838"
+                android:textSize="30sp"
+                app:fontFamily="@font/audiowide"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iAbsThree"
+                app:layout_constraintBottom_toTopOf="@id/pAbsOne"
+                />
+
+            <LinearLayout
+                android:id="@+id/pAbsOne"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="-13dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pLevelTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:src="@drawable/cablefly"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pAbsOneTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Cable fly"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/pAbsOneDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="8-12 reps\n4 sets\n15 - 20 minues"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

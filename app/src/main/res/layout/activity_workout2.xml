@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFEE"
+    tools:context=".Workout2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/blevelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="75dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Lower body"
+                android:textAlignment="center"
+                android:textColor="#3A3838"
+                android:textSize="30sp"
+                app:fontFamily="@font/audiowide"
+                app:layout_constraintBottom_toBottomOf="@id/bAbsOne"
+                app:layout_constraintBottom_toTopOf="@+id/bAbsOne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/bAbsOne"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blevelTitle"
+                app:layout_constraintBottom_toTopOf="@id/bAbsTwo"
+                >
+
+                <ImageView
+                    android:src="@drawable/legs"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bAbsOneTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Legs"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/bAbsOneDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="30 minutes"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bAbsTwo"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bAbsOne"
+                app:layout_constraintBottom_toTopOf="@id/bAbsThree"
+                >
+
+                <ImageView
+                    android:src="@drawable/gluttes2"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bAbsTwoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Glutes"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/bAbsTwoDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="20 minutes"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/ilevelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Yoga"
+                android:textAlignment="center"
+                android:textColor="#3A3838"
+                android:textSize="30sp"
+                app:fontFamily="@font/audiowide"
+                app:layout_constraintBottom_toTopOf="@id/iAbsOne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bAbsThree" />
+
+            <LinearLayout
+                android:id="@+id/iAbsOne"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ilevelTitle"
+                app:layout_constraintBottom_toTopOf="@id/iAbsOne"
+                >
+
+                <ImageView
+                    android:src="@drawable/yoga4"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/iAbsOneTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"
+                        android:text="Hatha yoga"
+                        android:textColor="#000000"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/iAbsOneDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="60 minutes"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
